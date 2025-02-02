@@ -43,6 +43,13 @@
     <dialog open>you're here!</dialog>
     <h2>Quotes</h2>
     <blockquote>
+      <search>
+        <form>
+          <label for="query">find quote</label>
+          <input id="query" name="q" type="search">
+          <button type="submit">go!</button>
+        </form>
+      </search>
       <p>"In computing, invariants are ephemeral." - <cite>Alan Perlis</cite></p>
       <p>"Premature optimization is the root of all evil." - <cite>Donald Knuth</cite></p>
       <p>"To iterate is human, to recurse divine." - <cite>L Peter Deutsch</cite></p>
@@ -218,13 +225,6 @@
         <textarea id="message" name="message"></textarea><br>
         <button type="submit">Submit</button>
       </fieldset>
-      <search>
-        <form>
-          <label for="query">find info</label>
-          <input id="query" name="q" type="search">
-          <button type="submit">go!</button>
-        </form>
-      </search>
     </form>
   </section>
 </main>
