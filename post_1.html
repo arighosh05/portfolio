@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Aritra Ghosh">
+  <meta property="og:title" content="portfolio post 1">">
+  <meta property="og:description" content="portfolio post 1 contains media, interactive sessions, and other content">>
+  <meta property="og:type" content="website">
+  <title>post 1</title>
+  <noscript>Your browser does not support JavaScript!</noscript>
+  <style>
+        body { border: 1px solid black; }
+        main { border: 1px solid black; }
+        section { border: 1px solid black; }
+   </style>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+        class HelloWorldElement extends HTMLElement {
+            constructor() {
+                super();
+                console.log("Hello World!");
+            }
+        }
+
+        customElements.define('hello-world', HelloWorldElement);
+    </script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="home.html">home</a></li>
+      <li><a href="projects.html">projects</a></li>
+      <li><a href="thoughts.html">thoughts</a></li>
+      <li><a href="gallery.html">gallery</a></li>
+      <li><a href="resume.pdf" target = "_blank">resume</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Post 1</h1>
+  </header>
+
+  <main>
+    <section id="intro">
+      <dialog open>you're here!</dialog>
+      <h2>Quotes</h2>
+      <blockquote>
+        <p>"In computing, invariants are ephemeral." - <cite>Alan Perlis</cite></p>
+        <p>"Premature optimization is the root of all evil." - <cite>Donald Knuth</cite></p>
+        <p>"To iterate is human, to recurse divine." - <cite>L Peter Deutsch</cite></p>
+      </blockquote>
+
+    </section>
+
+    <section id="content">
+      <h2>Stuff</h2>
+      <article>
+        <h3>Code</h3>
+  <pre><code> def reverse_recursive(head):
+    if not head or not head.next:
+        return head
+      new_head = reverse_recursive(head.next)
+      head.next.next = head
+      head.next = None
+    return new_head </code></pre>
+        <details>
+          <summary>what does this code do?</summary>
+          <hello-world></hello-world>
+          <p><em>reverses a linked list</em> in <strong>Python</strong> <abbr title="laugh out loud">lol</abbr></p>
+          <p>use <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy the code </p>
+          <p>for the uninitiated, <dfn>list</dfn> is a data structure that stores an ordered collection of elements.</p>
+        </details>
+      </article>
+
+      <h3>Media</h3>
+      <video controls>
+        <source src="portfolio_video.mp4" type="video/mp4" width="100" height="100" >
+        failed to render video :(
+      </video>
+      <audio controls>
+        <source src="portfolio_song.mp3" type="audio/mpeg">
+        failed to render audio :(
+      </audio>
+
+      <template>
+        <h3>hidden pic</h3>
+        <img src="portfolio_img_1.JPG" width="400" height="350" alt="sunset pic">
+      </template>
+    </section>
+
+    <div class="media_stuff">
+      <p>video was taken in <b>abu dhabi</b> and song is <i>pistols</i> by drake </p>
+    </div>
+
+    <section id = "interests">
+      <h3>quick intro</h3>
+      <hr>
+      <table>
+        <caption>ratings of stuff</caption>
+        <colgroup>
+          <col span="2" style="background-color:yellow">
+        </colgroup>
+
+        <tr>
+          <th>Stuff</th>
+          <th>Rating</th>
+        </tr>
+        <tr>
+          <td>Pizza</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>ML stuff</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Running</td>
+          <td>9.5</td>
+        </tr>
+        <tr>
+          <td>Red Bull</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>Soccer</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Pasta</td>
+          <td>7.5</td>
+        </tr>
+        <tr>
+          <td>Writing</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>Basketball</td>
+          <td>2</td>
+        </tr>
+
+      </table>
+    </section>
+
+    <section id = "vocab">
+      <h3>cool words</h3>
+      <dl>
+        <dt>hiraeth</dt>
+        <dd>a deep longing for something, especially one's home.</dd>
+
+        <dt>ataraxy</dt>
+        <dd>a state of serene calmness.</dd>
+
+        <dt>suadade</dt>
+        <dd>a feeling of longing, melancholy, or nostalgia that is supposedly characteristic of the Portuguese or Brazilian temperament.</dd>
+
+        <dt>metanoia</dt>
+        <dd>change in one's way of life resulting from penitence or spiritual conversion.</dd>
+      </dl>
+    </section>
+
+    <section id = "more">
+      <hgroup>
+        <h3>more thoughts</h3>
+        <p>
+          @nvidia stocks up or down?
+        </p>
+
+        <p>in reference to the chinese company <del>rednote</del> <ins>deepseek</ins>!</p>
+
+        <label for="poll">what do you think?:</label>
+
+        <select name="poll" id="poll">
+          <optgroup label="bull">
+            <option value="jevon's paradox">jenson's paradox</option>
+            <option value="brrrr">brrr</option>
+          </optgroup>
+          <optgroup label="bear">
+            <option value="bubble burst">bubble burst</option>
+            <option value="moore's law">moore's law</option>
+          </optgroup>
+        </select>
+
+        <label for="company1">companies to watch out for in 2025?</label>
+        <input list="company" name="company" id="company1">
+
+        <datalist id="company">
+          <option value="openai">
+          <option value="anthropic">
+          <option value="google">
+          <option value="amazon">
+          <option value="meta">
+        </datalist>
+
+        <search>
+          <form>
+            <input name="fsrch" id="fsrch" placeholder="google for info">
+          </form>
+        </search>
+        <iframe src="https://www.google.com/" title="search google"></iframe>
+        <p>nvm, google won't connect because 'X-Frame-Options' is set to 'sameorigin'</p>
+
+        <h3>Einstein's Famous Equation</h3>
+
+        <!-- MathML Representation of E=mc² -->
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <mi>E</mi>
+          <mo>=</mo>
+          <mi>m</mi>
+          <mo>&#8290;</mo> <!-- Invisible times symbol -->
+          <msup>
+            <mi>c</mi>
+            <mn>2</mn>
+          </msup>
+        </math>
+      </hgroup>
+    </section>
+
+    <section id="contact">
+      <h3>feedback form</h3>
+      <form>
+        <fieldset>
+          <legend>contact me!</legend>
+          <label for="name">name:</label>
+          <input type="text" id="name" name="name"><br>
+          <label for="message">message:</label>
+          <textarea id="message" name="message"></textarea><br>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <aside>
+    <h3>links related to the lab</h3>
+    <ul>
+      <li><a href="https://www.w3schools.com/html/default.asp">HTML Guide</a></li>
+      <li><a href="https://www.w3schools.com/css/default.asp">CSS Basics</a></li>
+    </ul>
+  </aside>
+
+  <footer>
+    <address>
+      Contact me at <a href="mailto:a7ghosh@ucsd.edu">a7ghosh@ucsd.edu</a>
+    </address>
+    <p>&copy; 2025 Post 1</p>
+  </footer>
+</body>
+</html>
