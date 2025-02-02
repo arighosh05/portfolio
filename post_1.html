@@ -23,7 +23,6 @@
 
         customElements.define('hello-world', HelloWorldElement);
   </script>
-  <noscript>NoJavaScript!</noscript>
 </head>
 <body>
   <nav>
@@ -35,15 +34,15 @@
       <li><a href="resume.pdf" target = "_blank">resume</a></li>
     </ul>
   </nav>
+  <noscript>No JavaScript allowed!</noscript>
   <header>
     <h1>Post 1</h1>
-    <search>
-      <form>
-        <input name="fsrch" id="fsrch" placeholder="search for info">
-      </form>
-    </search>
   </header>
-
+  <search>
+    <form>
+      <input name="fsrch" id="fsrch" placeholder="search for info">
+    </form>
+  </search>
   <main>
     <section id="intro">
         <dialog open>you're here!</dialog>
@@ -193,7 +192,7 @@
           <option value="amazon">
           <option value="meta">
         </datalist>
-      
+
         <iframe src="https://www.google.com/" title="search google"></iframe>
         <p>nvm, google won't connect because 'X-Frame-Options' is set to 'sameorigin'</p>
 
